@@ -23,6 +23,8 @@
 #include<opencv2/opencv.hpp>
 #include "Frame.h"
 
+#include <unistd.h>//zqchen
+
 
 namespace ORB_SLAM2
 {

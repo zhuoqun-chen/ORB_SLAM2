@@ -25,6 +25,8 @@
 #include"Thirdparty/DBoW2/DBoW2/FORB.h"
 #include"Thirdparty/DBoW2/DBoW2/TemplatedVocabulary.h"
 
+#include <unistd.h>//zqchen
+
 namespace ORB_SLAM2
 {
 

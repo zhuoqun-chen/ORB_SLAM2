@@ -28,14 +28,26 @@ endif()
 
 LIST(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake_modules)
 
-find_package(OpenCV 3.0 QUIET)
+### add by zqchen ###
+set(OpenCV_DIR /usr/local/opencv/3.4.7/share/OpenCV)
+find_package(OpenCV REQUIRED)
+include_directories(${OpenCV_INCLUDE_DIRS})
+#####################
+#find_package(OpenCV 3.0 QUIET)
 if(NOT OpenCV_FOUND)
    find_package(OpenCV 2.4.3 QUIET)
    if(NOT OpenCV_FOUND)
       message(FATAL_ERROR "OpenCV > 2.4.3 not found.")
    endif()
 endif()
+### add by zqchen ###
+message(STATUS "Hi zqchen, CMake have found the OpenCV !")
+#####################
 
+
+### add by zqchen ###
+#include_directories("/usr/local/include/eigen3")
+#####################
 find_package(Eigen3 3.1.0 REQUIRED)
 find_package(Pangolin REQUIRED)
 

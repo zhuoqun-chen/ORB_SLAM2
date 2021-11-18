@@ -36,6 +36,14 @@
 #include "ORBVocabulary.h"
 #include "Viewer.h"
 
+#include <unistd.h>//zqchen
+
+//zqchen**********************************
+#include <opencv2/imgproc/types_c.h>
+#include <opencv2/opencv.hpp>
+using namespace cv;
+//zqchen**********************************
+
 namespace ORB_SLAM2
 {
 

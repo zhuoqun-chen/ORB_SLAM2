@@ -27,7 +27,7 @@
 
 #include <mutex>
 
-
+#include <unistd.h>//zqchen
 
 namespace ORB_SLAM2
 {

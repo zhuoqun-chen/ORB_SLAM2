@@ -30,6 +30,8 @@
 #include"KeyFrame.h"
 #include"Frame.h"
 
+#include <unistd.h>//zqchen
+
 
 namespace ORB_SLAM2
 {
